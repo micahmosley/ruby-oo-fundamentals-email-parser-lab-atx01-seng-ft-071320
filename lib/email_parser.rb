@@ -11,7 +11,7 @@ class EmailAddressParser
   def parse 
     @parsed=@emails.split(/[\s,]/)
     @parsed=@parsed.uniq
-    @parsed.delete_if 
+    @parsed.delete_if {|email|
   end
   
   
